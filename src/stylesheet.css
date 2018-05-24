@@ -1,0 +1,8 @@
+#container {
+	text-align: center;
+}
+
+#input-group input, button {
+	margin: 10px;
+	float: left;
+}
