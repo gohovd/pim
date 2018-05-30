@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.0.4/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.0.4/firebase-database.js"></script>
+
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+  </head>
+  <body>
+
+
+
+    <div class="row" id="container">
+
+      <div class="col-xs-6 col-sm-4">C.R.U.D.</div>
+
+      <div class="col-xs-6 col-sm-4 center-block">
+        <div class="input-group" id="input-group">
+          <input id="author" type="text" class="input-sm" name="author" placeholder="Author name.."><br>
+          <input id="message" type="text" class="input-sm" name="text" placeholder="Text.."><br>
+          <button id="sendMsgBtn" type="submit" class="btn">Send</button>
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-sm-4">
+        <div id="textbox">M.S.G.</div>
+      </div>
+
+    </div>
+
+
+    <!-- Firebase reference -->
+    <script type="text/javascript" src="logic.js"></script>
+    
+  </body>
+  </html>
